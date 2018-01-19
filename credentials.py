@@ -11,6 +11,7 @@ def save_credentials(self):
 	self.credentials_list.append(self)
 
 def delete_credentials(self):
+	"""delete _contact method deletes a saved contact from contact_list"""
 	Credentials.credentials_list.remove(self)
 
 @classmethod
