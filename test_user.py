@@ -16,7 +16,7 @@ class Testuser(unittest.TestCase):
 
 
 
-    def test_save_multiple_user(self):
+    
 
 if __name__ == '__main__':
     unittest.main()
