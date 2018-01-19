@@ -1,6 +1,7 @@
 # Password Locker
 
 This project was generated with python 3.6
+
 #### 19th January 2018
 
 #### By Brilliant Kaimba briegrant416@gmail.com
@@ -15,8 +16,23 @@ This is an application that allows us to generate and store passwords for variou
 * From the terminal navigate to the cloned project folder.
 * Run python3.6 run.py code in the terminal to launch.
 
+  Run python3.6 credentials_test.py for credential class tests.
+  Run python3.6 test_user.py for user class tests.
+
 ## Technologies Used
-The technologies used to design this password locker is 
+The technologies used to design this password locker is
+
+##Usage
+
+Once you launch, You can either create a new user, or login or exit the application.
+If you choose to login(lg), use: testuser as username and PassWord
+If you choose to create a new account, use cu as the code and follow the prompts.
+Once logged in, you can:
+     * View Your saved credentials.
+     * Add new credentials.
+     * Remove credentials.
+     * Search credentials.
+     * Log Out.
 
 ## Known Bugs
 There are no known bugs.
