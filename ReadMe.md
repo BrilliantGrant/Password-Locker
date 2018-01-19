@@ -17,7 +17,8 @@ This is an application that allows us to generate and store passwords for variou
 * Run python3.6 run.py code in the terminal to launch.
 
   Run python3.6 credentials_test.py for credential class tests.
-  
+
+
   Run python3.6 test_user.py for user class tests.
 
 ## Technologies Used
@@ -29,11 +30,11 @@ Once you launch, You can either create a new user, or login or exit the applicat
 If you choose to login(lg), use: testuser as username and PassWord
 If you choose to create a new account, use cu as the code and follow the prompts.
 Once logged in, you can:
-     * View Your saved credentials.
-     * Add new credentials.
-     * Remove credentials.
-     * Search credentials.
-     * Log Out.
+* View Your saved credentials.
+* Add new credentials.
+* Remove credentials.
+* Search credentials.
+* Log Out.
 
 ## Known Bugs
 There are no known bugs.
