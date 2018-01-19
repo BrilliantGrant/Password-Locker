@@ -13,6 +13,39 @@ def save_credentials(self):
 def delete_credentials(self):
 	Credentials.credentials_list.remove(self)
 
+@classmethod
+    def find_by_name(cls, account_name):
+    	"""Method that atkes in a number and returns that matches that number.
+
+    	Args: 
+
+    		number: Phone number to search for
+
+    	Returns:
+    	 	Contact of person that matches the number"""
+
+        for credential in cls.credentials_list:
+            if credential.account_name == account_name:
+                return credential
+
+ @classmethod
+    def credential_exists(cls, name):
+        """Method to check whether a credential exists
+        Args:
+        name: name of account to search whether it exists
+        boolean: True or False depending if the contatc exists
+        """
+
+        for credential in cls.credentials_list:
+            if credential.account_name == name:
+                return True
+        return False
+
+ @classmethod
+    def display_credentials(cls):
+        """Method which displays all current credentials"""
+        return cls.credentials_list
+
 
 
 
