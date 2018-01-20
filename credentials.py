@@ -25,7 +25,7 @@ class Credentials:
         Credentials.credentials_list.remove(self)
 
     @classmethod
-    def find_by_name(cls,name):
+    def find_by_account_name(cls,name):
 
         for credentials in cls.credentials_list:
             if credentials.account_name == name:
@@ -39,7 +39,7 @@ class Credentials:
       return False
 
     @classmethod
-    def display_credentialss(cls):
+    def display_credentials(cls):
       return cls.credentials_list  
 
    

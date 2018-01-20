@@ -1,3 +1,5 @@
+#!/usr/bin/env python3.6
+
 import random
 from user import User
 from credentials import Credentials
@@ -30,6 +32,7 @@ def display_credentials():
     """Function which displays all saved credentials"""
     return Credentials.display_credentials()
 
+
 def delete_credential(credentials):
     """
     Method that deletes credentials
@@ -61,7 +64,7 @@ def main():
                 print("Enter a password")
                 created_user_password = input()
                 print("Confirm Your Password")
-confirm_password = input()
+                confirm_password = input()
             else:
                 print(f"Congratulations {created_user_name}! You have created your new account.")
                 print('\n')
@@ -92,7 +95,7 @@ confirm_password = input()
                     print("5: Log Out")
                     option = input()
 
-                     if option == '2':
+                    if option == '2':
                         while True:
                             print("Continue to add? y/n")
 
@@ -125,8 +128,7 @@ confirm_password = input()
                                 break
                             else:
                                 print("Please use 'y' for yes or 'n' for no!")
-
-                                  elif option == '1':
+                    elif option == '1':
                         while True:
                             print("Below is a list of all your credentials")
                             if display_credentials():
@@ -160,8 +162,7 @@ confirm_password = input()
                             break
                         elif logout == 'n':
                             continue
-
-                             elif option == '3':
+                    elif option == '3':
                         while True:
                             print("Search for credential to delete")
 
@@ -197,8 +198,7 @@ confirm_password = input()
                                     print(f"ACCOUNT NAME: {search_credential.account_name} \n PASSWORD: {search_credential.account_password}")
                                 else:
                                     print("That Contact Does not exist")
-
-                                    elif option2 == 'n':
+                            elif option2 == 'n':
                                 break
                             else:
                                 print("Please enter a valid code")
@@ -232,7 +232,7 @@ confirm_password = input()
                 print("Select an option below to continue: Enter 1, 2, 3, 4 or 5")
                 print('\n')
 
-                while True:
+            while True:
                 print("1: View Your saved credentials")
                 print("2: Add new credentials")
                 print("3: Remove credentials")
@@ -269,8 +269,7 @@ confirm_password = input()
 
                             save_new_credential(create_new_credential(
                                 account_name, account_password))
-
-                                 elif choice == 'n':
+                        elif choice == 'n':
                             break
                         else:
                             print("Please use 'y' for yes or 'n' for no!")
@@ -305,7 +304,7 @@ confirm_password = input()
                     print("WARNING! You will loose all your credentials if you log out. Are you sure? y/n")
                     logout = input().lower()
 
-                     if logout == 'y':
+                    if logout == 'y':
                         print("You have Successfully logged out")
                         break
                     elif logout == 'n':
@@ -333,7 +332,7 @@ confirm_password = input()
                             print("That Contact Does not exist")
                             break
 
-                             elif option == '4':
+                elif option == '4':
                     while True:
                         print("Continue? y/n")
                         option2 = input().lower()
