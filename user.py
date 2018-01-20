@@ -7,7 +7,13 @@ class User:
     
     user_list = []
     def save_user(self):
+    	"""Method that saves user objects into user_list"""
     	User.user_list.append(self)
+
+
+if __name__ == '__main__':
+    main()
+
 
     
 
