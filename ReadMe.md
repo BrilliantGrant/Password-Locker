@@ -22,7 +22,7 @@ This is an application that allows us to generate and store passwords for variou
   Run python3.6 test_user.py for user class tests.
 
 ## Technologies Used
-The technologies used to design this password locker is
+The technologies used to design this password locker is python3.6
 
 ## Usage
 

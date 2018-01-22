@@ -43,14 +43,27 @@ def delete_credential(credentials):
 def main():
 
     while True:
-        print("*******Hello!! Welcome to PassWord Locker*******")
+        print("*******HELLO!! WELCOME TO PASSWORD LOCKER*******")
         print('\n')
-        print("Please Use these short codes to select an option: Create New User use 'cu': Login to your account use 'lg' or 'ex' to exit password locker")
+        # print("Please Use these short codes to select an option: Create New User use 'cu': Login to your account use 'lg' or 'ex' to exit password locker")
+        # short_code = input().lower()
+        print ('-'*10)
+        print("Please Use These Short codes:")
+        print ('-'*10)
+        print("lg :  Login") 
+        print('cu :  Create New User')
+        print("fu :  Find a User")
+        print("du :  Display Users")
+        print("ex :  Exit")
+        
         short_code = input().lower()
         print('\n')
 
+
         if short_code == 'cu':
+            print ('-'*10)
             print("Create a UserName")
+            print ('-'*10)
             created_user_name = input()
 
             print("Select a Password")
@@ -208,7 +221,9 @@ def main():
                         continue
 
         elif short_code == 'lg':
+            print ('-'*10)
             print("Welcome!")
+            print ('-'*10)
             print("Enter UserName")
             default_user_name = input()
 
